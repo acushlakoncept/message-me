@@ -19,3 +19,10 @@
  .chatbox {
      height: 450px;
  }
+
+ @media only screen and (max-width: 800px) {
+    .hide-content {
+        display: none !important;
+        background-color: red;
+    }
+  }
