@@ -2,6 +2,7 @@
 // present in this directory. You're encouraged to place your actual application logic in
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
+
 require("semantic-ui-sass")
 require("@rails/ujs").start()
 require("turbolinks").start()
@@ -16,6 +17,27 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-// $(document).on('turbolinks:load', function() {
-//     $('.ui.dropdown').dropdown();
-// })
+scroll_bottom = function() {
+  if ($('#messages').length > 0) {
+    $('#messages').scrollTop($('#messages')[0].scrollHeight);
+  }
+}
+
+submit_message = function() {
+  $('#message_body').on('keydown', function(e) {
+    if (e.keyCode == 13) {
+      $('button').click;
+    }
+  })
+}
+
+$(document).on('turbolinks:load', function() {
+    // $('.ui.dropdown').dropdown();
+
+    $('.message .close').on('click', function() {
+      $(this).closest('.message').transition('fade');
+    });
+
+    submit_message();
+    scroll_bottom();
+})
