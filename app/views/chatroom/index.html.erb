@@ -5,25 +5,23 @@
 
 <div class="ui two column grid">
     <div class="twelve wide column">
-    <div class="ui fluid raised card chatbox">
-        <div class="content" id="messages">
-            <div class="ui feed" id="message-container">
-                <%= render @messages %>
+        <div class="ui fluid raised card chatbox">
+            <div class="content" id="messages">
+                <div class="ui feed" id="message-container">
+                    <%= render @messages %>
+                </div>
+            </div>
+            <div class="extra content">
+                <%= form_for(@message, remote: true, html: { class: "ui reply form", role: "form"}, url: message_path) do |f| %>
+                <div class="field"></div>
+                <div class="ui blue fluid icon input">
+                    <%= f.text_field :body, placeholder: "Enter a message..." %>
+                    <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
+                </div>
+                <% end %>
             </div>
         </div>
-        <div class="extra content">
-            <%= form_for(@message, remote: true, html: { class: "ui reply form", role: "form"}, url: message_path) do |f| %>
-                <div class="field">
-                </div>
-                <div class="ui blue fluid icon input">
-                <%= f.text_field :body, placeholder: "Enter a message..." %>
-                <%= f.button '<i class="bordered inverted orange edit icon"></i>'.html_safe %>
-                 
-                </div>
-            <% end %>
-        </div>
     </div>
-</div>
 
 
     <div class="four wide column">
