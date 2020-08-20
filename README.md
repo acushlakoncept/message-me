@@ -40,3 +40,7 @@ Contributions, issues and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgement
+
+Mauro Martinez - [The Complete Ruby on Rails Developer Course](https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/)
