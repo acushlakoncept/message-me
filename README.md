@@ -2,6 +2,8 @@
 
 In this project I developed a simple chat app using Rails ActionCable feature with Redis Server
 
+![screenshot](./messageme.gif)
+
 ## Built With
 
 - Ruby on Rails
