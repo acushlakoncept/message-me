@@ -1,24 +1,40 @@
-# README
+# Message Me APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In this project I developed a simple chat app using Rails ActionCable feature with Redis Server
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby on Rails
+- Ruby
 
-* System dependencies
+# Getting Started
 
-* Configuration
+To get a local copy of the repository please run the following commands on your terminal:
 
-* Database creation
+```
+$ cd <folder>
+```
 
-* Database initialization
+~~~bash
+$ git clone https://github.com/acushlakoncept/message-me.git
+$ cd message-me
+$ bundle install 
+$ rails db:migrate
+~~~
 
-* How to run the test suite
+# Authors
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Uduak Essien**
 
-* Deployment instructions
+- Github: [@acushlakoncept](https://github.com/acushlakoncept/)
+- Twitter: [@acushlakoncept](https://twitter.com/acushlakoncept)
+- Linkedin: [acushlakoncept](https://www.linkedin.com/in/acushlakoncept/)
 
-* ...
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!

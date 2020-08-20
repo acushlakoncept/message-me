@@ -1,6 +1,9 @@
 <%= link_to 'Chatroom', root_path, class: 'item' %>
 <a class="item"> Messages</a>
 <div class="right menu">
+<% if logged_in? %>
+<%= link_to current_user.username, "#", class: 'item' %>
+<% end %>
   <div class="ui simple dropdown item">
      Account <i class="dropdown icon"></i>
      <div class="menu">
